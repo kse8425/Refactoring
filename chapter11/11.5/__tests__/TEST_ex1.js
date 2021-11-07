@@ -1,4 +1,4 @@
-var Order = require("../RF_ch11_5");
+var Order = require("../ex1_RF");
 
 test("fianlPrice discountedLevel 2", () => {
   var order = new Order(200, 10);

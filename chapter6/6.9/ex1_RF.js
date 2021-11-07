@@ -1,4 +1,6 @@
 reading = { customer: "vian", quantity: 10, month: 5, year: 2017 };
+
+//===== Add Code For Testing =====
 function baseRate(aMonth, aYear) {
   if (aYear > 2010) {
     return aMonth > 6 ? 500 : 700;
@@ -10,6 +12,7 @@ function acquireReading() {
 function taxThreshold() {
   return 1000;
 }
+//=================================
 
 class Reading {
   constructor(data) {

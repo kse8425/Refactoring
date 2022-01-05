@@ -18,10 +18,10 @@ class Person {
     this._telephoneNumber.areaCode = arg;
   }
   get officeNumber() {
-    return this._telephoneNumber.officeNumber;
+    return this._telephoneNumber.number;
   }
   set officeNumber(arg) {
-    this._telephoneNumber.officeNumber = arg;
+    this._telephoneNumber.number = arg;
   }
 }
 
@@ -39,7 +39,7 @@ class TelephoneNumber {
     this._number = arg;
   }
   toString() {
-    return `(${this.areaCode}) ${this.officeNumber}`;
+    return `(${this.areaCode}) ${this.number}`;
   }
 }
 

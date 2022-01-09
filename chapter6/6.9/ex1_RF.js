@@ -1,6 +1,6 @@
 reading = { customer: "vian", quantity: 10, month: 5, year: 2017 };
 
-//===== Add Code For Testing =====
+// ===== Add Code For Testing =====
 function baseRate(aMonth, aYear) {
   if (aYear > 2010) {
     return aMonth > 6 ? 500 : 700;
@@ -12,7 +12,7 @@ function acquireReading() {
 function taxThreshold() {
   return 1000;
 }
-//=================================
+// =================================
 
 class Reading {
   constructor(data) {
@@ -42,26 +42,24 @@ class Reading {
   }
 }
 
-// Client 1
-{
+function client1() {
   rawReading = acquireReading();
   const aReading = new Reading(rawReading);
   const baseCharge = aReading.baseCharge;
-  console.log(baseCharge); //7000
+  return baseCharge; //7000
 }
 
-// Client 2
-{
+function client2() {
   rawReading = acquireReading();
   const aReading = new Reading(rawReading);
   const taxableCharge = aReading.taxableCharge;
-  console.log(taxableCharge); //6000
+  return taxableCharge; //6000
 }
 
-// Client 3
-{
+function client3() {
   rawReading = acquireReading();
   const aReading = new Reading(rawReading);
   const basicChargeAmount = aReading.baseCharge;
-  console.log(basicChargeAmount); //7000
+  return basicChargeAmount; //7000
 }
+module.exports = { Reading, client1, client2, client3 };

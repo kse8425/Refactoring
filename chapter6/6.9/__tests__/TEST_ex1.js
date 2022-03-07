@@ -1,8 +1,8 @@
-const client1 = require("../ex1").client1;
-const client2 = require("../ex1").client2;
-const client3 = require("../ex1").client3;
+const client1 = require('../ex1').client1;
+const client2 = require('../ex1').client2;
+const client3 = require('../ex1').client3;
 
-test("ch6.9 - TEST", () => {
+test('ch6.9 - TEST', () => {
   //   const rawReading = acquireReading();
   //   const aReading = new Reading(rawReading);
   //   const baseCharge = aReading.baseCharge;

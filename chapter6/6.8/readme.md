@@ -33,3 +33,5 @@ function amountInvoiced(aDateRange){ ... }
 function amountReceived(aDateRange){ ... }
 function amountOverdue(aDateRange){ ... }
 ```
+
+[6.5]: https://github.com/kse8425/Refactoring/tree/main/chapter6/6.5

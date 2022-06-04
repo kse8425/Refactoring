@@ -126,6 +126,23 @@
 
 이 문제는 [위임 숨기기][7.7]로 해결한다. 이 리팩터링은 다양한 연결점에 적용할 수 있지만, 그러다 보면 중간 객체들이 모두 중개자가 돼버리기 쉽다. 따라서 최종 결과 객체가 어떻게 쓰이는지부터 살펴보는 게 좋다.
 
+## 3.18 중개자(Middle Man)
+
+객체의 대표적인 기능 하나로, 외부로부터 세부사항을 숨겨주는 캡슐화가 있다. 캡슐화하는 과정에서는 위임이 자주 활용된다.  
+하지만 지나치면 문제가 된다. 클래스가 제공하는 메서드 중 절반이 다른 클래스에 구현을 위임하고 있다면, [중재자 제거하기][7.8]를 활용하여 실제로 일을 하는 객체와 직접 소통하게 하자.
+
+## 3.19 내부자 거래(Insider Trading)
+
+## 3.20 거대한 클래스(Large Class)
+
+## 3.21 서로 다른 인터페이스의 대안 클래스들(Alternative Classes with Different Interfaces)
+
+## 3.22 데이터 클래스(Data Class)
+
+## 3.23 상속 포기(Refused Bequest)
+
+## 3.24 주석(Comments)
+
 [ch6]: https://github.com/kse8425/Refactoring/tree/main/chapter6
 [ch7]: https://github.com/kse8425/Refactoring/tree/main/chapter7
 [ch8]: https://github.com/kse8425/Refactoring/tree/main/chapter8

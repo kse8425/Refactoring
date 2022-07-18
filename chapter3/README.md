@@ -161,6 +161,9 @@
 
 ## 3.24 주석(Comments)
 
+주석은 악취가 아닌 향기를 입힌다. 문제는 주석을 탈취제처럼 사용하는데 있다. 주석이 장황하게 달린 원인이 코드를 잘못 작성했기 때문인 경우가 의외로 많다.  
+특정 코드 블록이 하는 일에 주석을 남기고 싶다면 [함수 추출하기][6.1]를 적용해본다. 이미 추출되어 있는 함수임에도 여전히 설명이 필요하다면 [함수 선언 바꾸기][6.5]로 함수 이름을 바꿔본다. 시스템이 동작하기 위한 선행조건을 명시하고 싶다면 [어서션 추가하기][10.6]가 대기하고 있다.
+
 [ch6]: https://github.com/kse8425/Refactoring/tree/main/chapter6
 [ch7]: https://github.com/kse8425/Refactoring/tree/main/chapter7
 [ch8]: https://github.com/kse8425/Refactoring/tree/main/chapter8

@@ -10,11 +10,7 @@ function photoDiv(p) {
 }
 
 function emitPhotoData(aPhoto) {
-  const result = [];
-  result.push(`제목 : ${aPhoto.title}`);
-  result.push(`위치 : ${aPhoto.location}`);
-  result.push(`날짜 : ${aPhoto.date}`);
-  return result.join('\n');
+  return [`제목 : ${aPhoto.title}`, `위치 : ${aPhoto.location}`, `날짜 : ${aPhoto.date}`].join('\n');
 }
 
 module.exports = { renderPerson, photoDiv };
